@@ -1,0 +1,13 @@
+{
+    "rates": {
+        "base": {
+            "stationary": 0.02,
+            "motion": 0.05
+        },
+        "demand_multipliers": {
+            "normal": 1.0, 
+            "low": 0.9,
+            "high": 1.1
+        }
+    }
+}
