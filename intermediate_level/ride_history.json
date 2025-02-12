@@ -1,0 +1,30 @@
+{"total_ride": 0.5214829444885254, "demand_multiplier": 1.0, "timestamp": "2025-02-10T10:00:37.600995"}
+{"total_ride": 0.09918425083160401, "demand_multiplier": 1.0, "timestamp": "2025-02-10T10:00:45.380923"}
+{"total_ride": 0.13303223848342896, "demand_multiplier": 1.0, "timestamp": "2025-02-10T11:41:24.354076"}
+{"total_ride": 0.27221801280975344, "demand_multiplier": 1.0, "timestamp": "2025-02-10T14:27:38.234895"}
+{"total_ride": 0.16347167253494263, "demand_multiplier": 1.0, "timestamp": "2025-02-10T14:27:49.272862"}
+{"total_ride": 10.0, "demand_multiplier": 1.0, "timestamp": "2025-02-11T09:49:20.264613"}
+{"total_ride": 10.0, "demand_multiplier": 1.0, "timestamp": "2025-02-11T10:04:35.804361"}
+{"total_ride": 10.0, "demand_multiplier": 1.0, "timestamp": "2025-02-11T10:09:17.273887"}
+{"total_ride": 10.0, "demand_multiplier": 1.0, "timestamp": "2025-02-11T10:10:11.837757"}
+{"total_ride": 0.0, "demand_multiplier": 1.0, "timestamp": "2025-02-11T11:23:25.086125"}
+{"total_ride": 0.08913987874984741, "demand_multiplier": 1.0, "timestamp": "2025-02-11T11:31:17.161250"}
+{"total_ride": 0.0943228006362915, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 11:48:33"}
+{"total_ride": 0.36, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 11:49:59"}
+{"total_ride": 0.1, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 12:59:08"}
+{"total_ride": 0.08, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 14:24:07"}
+{"total_ride": 0.36, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 14:28:40"}
+{"total_ride": 0.05, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 14:31:32"}
+{"total_ride": 0.1, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 14:38:43"}
+{"total_ride": 0.09, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 17:35:27"}
+{"total_ride": 0.08, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 17:36:54"}
+{"total_ride": 0.08, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 17:48:40"}
+{"total_ride": 0.12, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 17:51:05"}
+{"total_ride": 0.07, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 22:56:40"}
+{"total_ride": 0.0, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 22:59:04"}
+{"total_ride": 0.11, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 23:01:09"}
+{"total_ride": 0.2, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 23:02:14"}
+{"total_ride": 0.07, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 23:04:11"}
+{"total_ride": 0.09, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 23:07:26"}
+{"total_ride": 0.16, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 23:10:00"}
+{"total_ride": 0.16, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Wednesday 12 Feb 2025 at 08:53:35"}
