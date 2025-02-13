@@ -3,7 +3,7 @@ import json
 import os
 import datetime
 from unittest.mock import patch, mock_open
-from main_taximeter_intermediate_level import load_rates, demand_level, ride_history, ride_logs
+from intermediate_level.main_taximeter_intermediate_level import load_rates, demand_level, history_ride, logs_ride
 
 #---------------------------------------------------------------------------------------
 def test_load_rates():
@@ -46,26 +46,48 @@ def test_demand_level(monkeypatch):
     assert "🟢 Low Demand: Discounted rate for off-peak hours will be applied" in demand
 
 #---------------------------------------------------------------------------------------
-def test_ride_history():
+def test_history_ride():
     total_ride = 1.0
     demand_multiplier = 1.1
 
     with patch("builtins.open", mock_open()) as mocked_file:
-        ride_history(total_ride, demand_multiplier)
-        mocked_file.assert_called_once_with("intermediate_level/ride_history.json", "a")
+        history_ride(total_ride, demand_multiplier)
+        mocked_file.assert_called_once_with("intermediate_level/history_ride.json", "a")
         handle = mocked_file()
         assert handle.write.call_count == 22
 
 #---------------------------------------------------------------------------------------
-def test_log_ride():
-    message = "Total ride: 10.0, Demand multiplier: 1.1"
 
+LOGS_PATH = os.path.join("intermediate_level", "logs_ride.log")
+
+@pytest.fixture(autouse=True)
+def setup_and_teardown():
+    if os.path.exists(LOGS_PATH):
+        os.remove(LOGS_PATH)
+
+def test_logs_ride_success():
+    message = "Test log entry"
+    
     with patch("builtins.open", mock_open()) as mocked_file:
-        ride_logs(message)
-        mocked_file.assert_called_once_with("intermediate_level/logs_ride.log", "a")
+        logs_ride(message)
+   
+        mocked_file.assert_called_once_with(LOGS_PATH, "a")
         
-        handle = mocked_file()
-        print(handle.write.call_args_list)
-        assert handle.write.call_count == 1 
+        written_data = mocked_file().write.call_args[0][0]
+        
+        print("Written data:", written_data)
+        
+        assert written_data.strip()  
+        
+        assert message in written_data
+        assert "INFO" in written_data
+
+def test_logs_ride_file_error():
+    message = "Test log entry"
+    
+    with patch("builtins.open", side_effect=IOError("File error")):
+        with patch("logging.error") as mock_logging_error:
+            logs_ride(message)
+            mock_logging_error.assert_called_once_with("Error saving ride logs: File error")
 
 # For running (be sure to be on the RIGHT FOLDER!!!) the test: pytest test_taximeter_intermediate.py

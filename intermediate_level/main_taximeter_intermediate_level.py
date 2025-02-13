@@ -3,18 +3,20 @@ import datetime
 import json
 import os
 import logging
+
 #---------------------------------------------------------------------------------------
 os.makedirs("intermediate_level", exist_ok=True)
 
 logging.basicConfig(
-    filename= os.path.join("intermediate_level", "logs_ride.log"),
-    level=logging.DEBUG,
+    filename=os.path.join("intermediate_level", "logs_ride.log"),
+    level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
-logging.info("\nProgram started. Welcome message displayed.")
+
 
 #---------------------------------------------------------------------------------------
 def show_welcome():
+    logging.info("Welcome/Instructions message showned.")
     print("\n--- Welcome to your taximeter!  🚕 ---")
     print("""This program calculates the fare in km of a ride in euros.
             \n let me show you how we work first 😉
@@ -47,7 +49,7 @@ def load_rates():
             json_data = json.load(file)  
         return json_data["rates"]  
     except Exception as e:
-        logging.error(f"Error loading rates: {e}")
+        logging.error(f"Error loading fare rates: {e}")
         return None 
 
 rates = load_rates()
@@ -66,7 +68,7 @@ def demand_level():
     hour_high_demand_saturday = list(range(1, 4)) + list(range(22, 24)) 
     hour_high_demand_sunday = list(range(18,21))
 
-    if weekday < 5:
+    if weekday < 5: # meter variables para que el 5 sea comprensible como día de la semana
         high_demand_hour = hour_high_demand_week
     elif weekday == 5:
         high_demand_hour = hour_high_demand_saturday
@@ -74,14 +76,17 @@ def demand_level():
         high_demand_hour = hour_high_demand_sunday 
 
     if month in month_high_demand and hour in high_demand_hour:
+        logging.info("High demand detected")
         return "🔴 High Demand: Extra percentage will be applied during rush hours."
     elif month in month_low_demand and hour  not in high_demand_hour:
+        logging.info("Low demand detected")
         return "🟢 Low Demand: Discounted rate for off-peak hours will be applied."
     else: 
+        logging.info("Normal demand detected")
         return "🟡 Normal: Standard rate used during regular traffic conditions."
 #---------------------------------------------------------------------------------------
 
-def ride_history(total_ride, demand_multiplier):
+def history_ride(total_ride, demand_multiplier):
 
     total_ride = round(total_ride, 2)
 
@@ -96,44 +101,40 @@ def ride_history(total_ride, demand_multiplier):
     now = datetime.datetime.now()
     formatted_timestamp = now.strftime("%A %d %b %Y at %H:%M:%S")
 
-    # Create ride_history entry
+    # Create history_ride entry
     history_entry = {
         "total_ride": total_ride,
         "demand": {
-            "type": demand_type,  # Now it shows "high", "low", or "normal"
-            "multiplier": demand_multiplier  # Now it keeps the numeric value too
+            "type": demand_type, 
+            "multiplier": demand_multiplier  
         },
-        "timestamp": formatted_timestamp  # Human-readable timestamp
+        "timestamp": formatted_timestamp  
     }
 
 
     history_folder = "intermediate_level"
-    history_path = os.path.join(history_folder, "ride_history.json")
+    history_path = os.path.join(history_folder, "history_ride.json")
     os.makedirs(history_folder, exist_ok=True)
 
     try:
         with open(history_path, "a") as history_file:
             json.dump(history_entry, history_file)
             history_file.write("\n")
-        logging.info(f"Ride succesfully entered in 'ride_history.json' file.")  
+        logging.info(f"Ride succesfully registered.")  
     except Exception as e:
-        logging.error("Error saving ride history: {e}")
+        logging.error(f"Error saving ride history: {e}")
 #---------------------------------------------------------------------------------------
-def ride_logs (message):
-    log_entry = {
-        "message": message,
-        "timestamp": datetime.datetime.now().isoformat()
-    }
+def logs_ride (message, level="INFO"):
+    timestamp = datetime.datetime.now().isoformat()
+    log_entry = f"{timestamp} - {level} - {message}"
 
     logs_folder = "intermediate_level"
     logs_path = os.path.join(logs_folder, "logs_ride.log")
     os.makedirs(logs_folder, exist_ok=True)
-    
 
     try:
         with open(logs_path, "a") as logs_file:
-            json.dump(log_entry, logs_file)
-        logging.info(f"Log entry successfully added to 'ride_history.json'.")  
+            logs_file.write(log_entry) 
     except Exception as e:
         logging.error(f"Error saving ride logs: {e}")
 
@@ -145,8 +146,9 @@ def ride():
     
     while True:
         input("Press ENTER to start a new ride 🚖...")
-        logging.info("Let's go! 💨")
-        print("""Type the below accordingly:
+        logging.info("New ride on going.")
+        print("""Let's go! 💨"
+              Type the below accordingly:
               ⏸️ Stop
               ⏯️ Go
               ⏹️ End""")
@@ -162,12 +164,12 @@ def ride():
             
             if input_rider == "stop":
                 total_stationary += elapsed_time * rate_stationary
-                logging.info(f"Taxi stopped. Elapsed time: {elapsed_time:.2f}secs, Rate: {total_stationary:.2f}€")
+                print(f"Taxi stopped. Elapsed time: {elapsed_time:.2f}secs, Rate: {total_stationary:.2f}€")
                 start_taximeter = time.time()
             
             elif input_rider == "go":
                 total_motion += (time.time() - start_taximeter) * rate_motion
-                logging.info(f"Taxi in motion. Elapsed time: {elapsed_time:.2f}secs, Rate: {rate_motion:.2f}€")
+                print(f"Taxi in motion. Elapsed time: {elapsed_time:.2f}secs, Rate: {rate_motion:.2f}€")
                 start_taximeter = time.time()
             
             elif input_rider == "end":
@@ -181,21 +183,23 @@ def ride():
                     demand_multiplier = rates["demand_multipliers"]["low"]
                 
                 total_ride *= demand_multiplier
-                logging.info(f"\nRide ended. Elapsed time: {elapsed_time:.2f}secs, TOTAL RATE: {total_ride:.2f}€ (after demand adjustment)\n")
+                print(f"\nRide ended. Elapsed time: {elapsed_time:.2f}secs, TOTAL RATE: {total_ride:.2f}€ (after demand adjustment)\n")
                 
-                ride_history(total_ride, demand_multiplier)
+                history_ride(total_ride, demand_multiplier)
                 break
             
             else:
-                logging.warning(f"Invalid input received: {input_rider}")
+                logging.warning(f"Invalid input received by user: '{input_rider}'")
                 print("Invalid input. Enter: ⏸️ Stop, ⏯️ Go or ⏹️ End: ")
         
         print("Do you want to enter a new ride? ✅ Yes ❌ No : ")
         input_restart = input("Type '✅ Yes' if you want a new ride: ").strip().lower()
         if input_restart != 'yes':
+            logging.info(f"User has finalized the trip sequence.")
             print("Thank you for using Taximeter! Hope to see you again 👋!")
             break
         else:
+            logging.info("New ride on going under the user's session.")
             print(f"New ride in progress 🚖")
             continue
 #---------------------------------------------------------------------------------------

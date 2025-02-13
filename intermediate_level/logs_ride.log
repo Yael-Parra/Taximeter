@@ -5,7 +5,6 @@ Program started. Welcome message displayed.
 2025-02-11 14:31:30,837 - WARNING - Indalid input received: 
 2025-02-11 14:31:32,309 - INFO - 
 Ride ended. Elapsed time: 1.49secs, TOTAL RATE: 0.05€ (after demand adjustment)
-
 2025-02-11 14:31:32,313 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 14:38:35,194 - INFO - 
 Program started. Welcome message displayed.
@@ -13,7 +12,6 @@ Program started. Welcome message displayed.
 2025-02-11 14:38:41,595 - INFO - Taxi in motion. Elapsed time: 1.96secs, Rate: 0.05€
 2025-02-11 14:38:43,468 - INFO - 
 Ride ended. Elapsed time: 1.87secs, TOTAL RATE: 0.10€ (after demand adjustment)
-
 2025-02-11 14:38:43,479 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 17:35:20,388 - INFO - 
 Program started. Welcome message displayed.
@@ -21,7 +19,6 @@ Program started. Welcome message displayed.
 2025-02-11 17:35:26,438 - INFO - Taxi in motion. Elapsed time: 1.77secs, Rate: 0.05€
 2025-02-11 17:35:27,349 - INFO - 
 Ride ended. Elapsed time: 0.91secs, TOTAL RATE: 0.09€ (after demand adjustment)
-
 2025-02-11 17:35:27,374 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 17:36:49,377 - INFO - 
 Program started. Welcome message displayed.
@@ -29,7 +26,6 @@ Program started. Welcome message displayed.
 2025-02-11 17:36:53,410 - INFO - Taxi in motion. Elapsed time: 1.67secs, Rate: 0.05€
 2025-02-11 17:36:54,195 - INFO - 
 Ride ended. Elapsed time: 0.78secs, TOTAL RATE: 0.08€ (after demand adjustment)
-
 2025-02-11 17:36:54,204 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 17:50:58,062 - INFO - 
 Program started. Welcome message displayed.
@@ -37,7 +33,6 @@ Program started. Welcome message displayed.
 2025-02-11 17:51:03,160 - INFO - Taxi in motion. Elapsed time: 2.46secs, Rate: 0.05€
 2025-02-11 17:51:05,116 - INFO - 
 Ride ended. Elapsed time: 1.95secs, TOTAL RATE: 0.12€ (after demand adjustment)
-
 2025-02-11 17:51:05,122 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 22:56:35,305 - INFO - 
 Program started. Welcome message displayed.
@@ -45,14 +40,12 @@ Program started. Welcome message displayed.
 2025-02-11 22:56:39,261 - INFO - Taxi in motion. Elapsed time: 1.45secs, Rate: 0.05€
 2025-02-11 22:56:40,419 - INFO - 
 Ride ended. Elapsed time: 1.16secs, TOTAL RATE: 0.07€ (after demand adjustment)
-
 2025-02-11 22:56:40,431 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 22:59:01,045 - INFO - 
 Program started. Welcome message displayed.
 2025-02-11 22:59:03,926 - INFO - Let's go! 💨
 2025-02-11 22:59:04,978 - INFO - 
 Ride ended. Elapsed time: 1.05secs, TOTAL RATE: 0.00€ (after demand adjustment)
-
 2025-02-11 22:59:04,984 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 23:01:01,348 - INFO - 
 Program started. Welcome message displayed.
@@ -60,7 +53,6 @@ Program started. Welcome message displayed.
 2025-02-11 23:01:05,847 - INFO - Taxi in motion. Elapsed time: 2.12secs, Rate: 0.05€
 2025-02-11 23:01:09,398 - INFO - 
 Ride ended. Elapsed time: 3.55secs, TOTAL RATE: 0.11€ (after demand adjustment)
-
 2025-02-11 23:01:09,405 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 23:01:59,261 - INFO - 
 Program started. Welcome message displayed.
@@ -68,7 +60,6 @@ Program started. Welcome message displayed.
 2025-02-11 23:02:11,979 - INFO - Taxi in motion. Elapsed time: 4.00secs, Rate: 0.05€
 2025-02-11 23:02:14,279 - INFO - 
 Ride ended. Elapsed time: 2.30secs, TOTAL RATE: 0.20€ (after demand adjustment)
-
 2025-02-11 23:02:14,287 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 23:04:01,967 - INFO - 
 Program started. Welcome message displayed.
@@ -76,7 +67,6 @@ Program started. Welcome message displayed.
 2025-02-11 23:04:10,204 - INFO - Taxi in motion. Elapsed time: 1.48secs, Rate: 0.05€
 2025-02-11 23:04:11,445 - INFO - 
 Ride ended. Elapsed time: 1.24secs, TOTAL RATE: 0.07€ (after demand adjustment)
-
 2025-02-11 23:04:11,451 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 23:07:19,719 - INFO - 
 Program started. Welcome message displayed.
@@ -84,7 +74,6 @@ Program started. Welcome message displayed.
 2025-02-11 23:07:24,431 - INFO - Taxi in motion. Elapsed time: 1.73secs, Rate: 0.05€
 2025-02-11 23:07:26,186 - INFO - 
 Ride ended. Elapsed time: 1.75secs, TOTAL RATE: 0.09€ (after demand adjustment)
-
 2025-02-11 23:07:26,190 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-11 23:09:51,836 - INFO - 
 Program started. Welcome message displayed.
@@ -94,7 +83,6 @@ Program started. Welcome message displayed.
 2025-02-11 23:09:58,037 - INFO - Taxi in motion. Elapsed time: 0.99secs, Rate: 0.05€
 2025-02-11 23:10:00,010 - INFO - 
 Ride ended. Elapsed time: 1.97secs, TOTAL RATE: 0.16€ (after demand adjustment)
-
 2025-02-11 23:10:00,015 - INFO - Ride succesfully entered in 'ride_history.json' file.
 2025-02-12 08:53:26,643 - INFO - 
 Program started. Welcome message displayed.
@@ -103,5 +91,44 @@ Program started. Welcome message displayed.
 2025-02-12 08:53:33,942 - WARNING - Invalid input received: saefhas
 2025-02-12 08:53:35,664 - INFO - 
 Ride ended. Elapsed time: 3.77secs, TOTAL RATE: 0.16€ (after demand adjustment)
-
 2025-02-12 08:53:35,668 - INFO - Ride succesfully entered in 'ride_history.json' file.
+2025-02-12 10:11:28,655 - INFO - 
+Program started. Welcome message displayed.
+2025-02-12 10:11:33,140 - INFO - 
+Program started. Welcome message displayed.
+2025-02-12 10:11:34,314 - INFO - 
+Program started. Welcome message displayed.
+2025-02-12 10:11:46,198 - INFO - 
+Program started. Welcome message displayed.
+2025-02-12 10:11:49,480 - INFO - Let's go! 💨
+2025-02-12 10:11:50,145 - WARNING - Invalid input received: no
+2025-02-12 10:11:53,231 - WARNING - Invalid input received: no
+2025-02-12 10:11:54,658 - INFO - 
+Ride ended. Elapsed time: 5.18secs, TOTAL RATE: 0.00€ (after demand adjustment)
+2025-02-12 10:11:54,662 - INFO - Ride succesfully entered in 'ride_history.json' file.
+2025-02-12 14:26:07,386 - INFO - 
+Program started. Welcome message displayed.
+2025-02-13 17:34:45,091 - INFO - Program started:
+2025-02-13 17:34:45,100 - INFO - Welcome/Instructions message showned.
+2025-02-13 17:34:47,470 - INFO - Let's go! 💨
+2025-02-13 17:34:51,629 - WARNING - Invalid input received by user: fo
+2025-02-13 17:35:04,542 - INFO - Low demand detected
+2025-02-13 17:35:04,552 - INFO - Ride succesfully registered.
+2025-02-13 17:35:07,388 - INFO - Adding another trip to the list.
+2025-02-13 17:35:11,001 - INFO - Let's go! 💨
+2025-02-13 17:35:36,587 - INFO - Low demand detected
+2025-02-13 17:35:36,592 - INFO - Ride succesfully registered.
+2025-02-13 17:35:38,222 - INFO - User has finalized the trip sequence.
+2025-02-13 17:40:59,377 - INFO - Program started:
+2025-02-13 17:40:59,381 - INFO - Welcome/Instructions message showned.
+2025-02-13 17:41:01,100 - INFO - New ride entered.
+2025-02-13 17:41:04,970 - INFO - Low demand detected
+2025-02-13 17:41:04,974 - INFO - Ride succesfully registered.
+2025-02-13 17:41:06,222 - INFO - User has finalized the trip sequence.
+2025-02-13 18:10:18,545 - INFO - 
+Program started:
+2025-02-13 18:10:18,548 - INFO - Welcome/Instructions message showned.
+2025-02-13 18:10:28,161 - INFO - New ride on going.
+2025-02-13 18:10:29,858 - INFO - Normal demand detected
+2025-02-13 18:10:29,862 - INFO - Ride succesfully registered.
+2025-02-13 18:10:30,738 - INFO - User has finalized the trip sequence.

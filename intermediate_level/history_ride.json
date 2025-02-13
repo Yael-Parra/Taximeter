@@ -28,3 +28,8 @@
 {"total_ride": 0.09, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 23:07:26"}
 {"total_ride": 0.16, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Tuesday 11 Feb 2025 at 23:10:00"}
 {"total_ride": 0.16, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Wednesday 12 Feb 2025 at 08:53:35"}
+{"total_ride": 0.0, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Wednesday 12 Feb 2025 at 10:11:54"}
+{"total_ride": 0.38, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Thursday 13 Feb 2025 at 17:35:04"}
+{"total_ride": 0.78, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Thursday 13 Feb 2025 at 17:35:36"}
+{"total_ride": 0.13, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Thursday 13 Feb 2025 at 17:41:04"}
+{"total_ride": 0.0, "demand": {"type": "normal", "multiplier": 1.0}, "timestamp": "Thursday 13 Feb 2025 at 18:10:29"}
