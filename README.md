@@ -4,8 +4,8 @@
 - [Introduction](#introduction)
 - [Libraries Used](#libraries-used)
 - [Folder Structure](#folder-structure)
-- [Basic Level](#basic-level)
-- [Intermediate Level](#intermediate-level)
+  - [Basic Level](#basic-level)
+  - [Intermediate Level](#intermediate-level)
 - [Roadmap](#roadmap)
 - [Development Status](#development-status)
 
@@ -15,8 +15,8 @@
 
 This repository contains a Taxi Fare System developed in Python. The project is divided into two levels:
 
-1.  🟢 **Basic Level**: A simple CLI-based system where the user can start a ride, calculate fares for both moving and stationary taxi, and end a ride.
-2.  🟡**Intermediate Level**: This level adds logging, unit tests, and a history of past trips for enhanced functionality.
+1. **Basic Level**: A simple CLI-based system where the user can start a ride, calculate fares for both moving and stationary taxi, and end a ride.
+2. **Intermediate Level**: This level adds logging, unit tests, and a history of past trips for enhanced functionality.
 
 The goal is to gradually improve the system, making it more robust and feature-rich.
 
@@ -40,11 +40,11 @@ The following libraries have been used in this project:
 
 The project is organized into two main folders:
 
-### 🟢 Basic Level
+### Basic Level
 - **`basic/`**: Contains the basic functionality of the Taxi Fare System.
   - **`taximeter_essential_level.ipynb`**: A Jupyter notebook where the basic CLI functionality is demonstrated.
 
-### 🟡 Intermediate Level
+### Intermediate Level
 - **`intermediate/`**: Includes the more advanced features like logging and historical records.
   - **`main_taximeter_intermediate_level.py`**: Python script for handling the core logic of the taxi fare system.
   - **`rates.json`**: JSON file containing the fare configuration.
