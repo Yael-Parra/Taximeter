@@ -1,13 +1,16 @@
-# <center> <span style="color:#fcfab3"> 🚖 Taxi Fare System </span> </center>
+# 🚖 Taxi Fare System
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Description](#description)
+- [Objective](#objective)
 - [Libraries Used](#libraries-used)
 - [Folder Structure](#folder-structure)
-  - [Basic Level](#basic-level)
-  - [Intermediate Level](#intermediate-level)
+    - [🟢 Basic Level](#basic-level)
+    - [🟡 Intermediate Level](#intermediate-level)
 - [Roadmap](#roadmap)
 - [Development Status](#development-status)
+- [Contact](#contact)
 
 ---
 
@@ -19,6 +22,30 @@ This repository contains a Taxi Fare System developed in Python. The project is 
 2. **Intermediate Level**: This level adds logging, unit tests, and a history of past trips for enhanced functionality.
 
 The goal is to gradually improve the system, making it more robust and feature-rich.
+
+---
+## 👀 Description
+
+The **Taxi Fare System** is a Python-based program designed to simulate the calculation of taxi fares during a ride. The system is intended to be used in real-time scenarios where a user can track their ride, whether the taxi is stationary or moving. 
+
+It aims to provide a simple yet effective CLI tool for managing taxi fares, focusing on real-time calculations and easy-to-use features. In its **Essential Level**, the program offers a simple ride simulation with basic fare tracking. In the **Intermediate Level**, additional features such as logging, unit testing, and historical ride tracking are added to make the system more scalable and reliable.
+
+This system is ideal for anyone looking to create a simple taxi fare program or develop a more robust solution with additional features as they learn more about Python and software development.
+
+---
+## 🔍 Objective
+
+The primary **objective** of this project is to build a scalable and easy-to-use taxi fare system that can grow with additional features and improvements over time. 
+
+**Key objectives include**:
+
+- **Real-time Fare Calculation**: Allow the system to calculate taxi fares dynamically as the taxi moves or stays stationary.
+- **Customizable Fare Settings**: Enable users to adjust fare configurations according to demand and various factors.
+- **Logging and History**: Implement logging for tracking system activity and storing ride history for future reference.
+- **Unit Testing**: Use testing frameworks to ensure the system is bug-free and performs as expected.
+- **Scalability**: Design the system to be easily extensible, allowing for future features such as a GUI, user authentication, and web-based access.
+
+The goal is to create a well-documented, modular, and easily maintainable codebase that will serve as both a learning tool and a foundation for future development.
 
 ---
 
@@ -40,12 +67,12 @@ The following libraries have been used in this project:
 
 The project is organized into two main folders:
 
-### Basic Level
-- **`basic/`**: Contains the basic functionality of the Taxi Fare System.
+### Essential Level
+- **`essential_level/`**: Contains the basic functionality of the Taxi Fare System.
   - **`taximeter_essential_level.ipynb`**: A Jupyter notebook where the basic CLI functionality is demonstrated.
 
 ### Intermediate Level
-- **`intermediate/`**: Includes the more advanced features like logging and historical records.
+- **`intermediate_level/`**: Includes the more advanced features like logging and historical records.
   - **`main_taximeter_intermediate_level.py`**: Python script for handling the core logic of the taxi fare system.
   - **`rates.json`**: JSON file containing the fare configuration.
   - **`logs_ride.log`**: Log file for tracking system events.
@@ -53,28 +80,28 @@ The project is organized into two main folders:
 
 ---
 
-## 🟢 Basic Level
+  ## 🟢 Essential Level
 
-The **Basic Level** contains the essential features of the Taxi Fare System:
+  The **Esential Level** contains the essential features of the Taxi Fare System:
 
-1. **Welcome Message**: When the program starts, it will greet the user and provide a brief explanation of how it works.
-2. **Start a Ride**: The user can initiate a ride and begin tracking the taxi's movement.
-3. **Fare Calculation**:
-    - When the taxi is **stationary**, it charges 2 cents per second.
-    - When the taxi is **moving**, it charges 5 cents per second.
-4. **End the Ride**: When the ride ends, the program will show the total fare in euros.
-5. **New Ride**: After completing a ride, the user can start a new ride without closing the program.
+  1. **Welcome Message**: When the program starts, it will greet the user and provide a brief explanation of how it works.
+  2. **Start a Ride**: The user can initiate a ride and begin tracking the taxi's movement.
+  3. **Fare Calculation**:
+      - When the taxi is **stationary**, it charges 2 cents per second.
+      - When the taxi is **moving**, it charges 5 cents per second.
+  4. **End the Ride**: When the ride ends, the program will show the total fare in euros.
+  5. **New Ride**: After completing a ride, the user can start a new ride without closing the program.
 
----
+  ---
 
-## 🟡 Intermediate Level
+  ## 🟡 Intermediate Level
 
-The **Intermediate Level** introduces more advanced features to enhance the system:
+  The **Intermediate Level** introduces more advanced features to enhance the system:
 
-1. **Logging**: A logging system is added to track various events such as the start and end of rides.
-2. **Unit Testing**: Using `pytest` and `unittest.mock`, the code is tested to ensure correctness and reliability.
-3. **Historical Records**: All past rides are stored in a JSON file for future reference.
-4. **Fare Configuration**: Users can modify fare settings in the `rates.json` file to adapt to demand changes (e.g., peak hours).
+  1. **Logging**: A logging system is added to track various events such as the start and end of rides.
+  2. **Unit Testing**: Using `pytest` and `unittest.mock`, the code is tested to ensure correctness and reliability.
+  3. **Historical Records**: All past rides are stored in a JSON file for future reference.
+  4. **Fare Configuration**: Users can modify fare settings in the `rates.json` file to adapt to demand changes (e.g., peak hours).
 
 ---
 
@@ -100,6 +127,13 @@ The **Expert Level** will take the project to the next level with more advanced 
 
 🚧 **Work in Progress** 🚧 
 
-The project is currently in development, and we're focusing on expanding the system to include more advanced features. Stay tuned for future updates!
+The project is currently in development, and focusing on expanding the system to include more advanced features. Stay tuned for future updates!
+
 
 ---
+
+## Contact
+
+If you have any questions or would like to contribute to the project, feel free to reach out to me:
+
+[LinkedIn Yael Parra](https://www.linkedin.com/in/yael-parra/)
