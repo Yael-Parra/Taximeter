@@ -132,3 +132,8 @@ Program started:
 2025-02-13 18:10:29,858 - INFO - Normal demand detected
 2025-02-13 18:10:29,862 - INFO - Ride succesfully registered.
 2025-02-13 18:10:30,738 - INFO - User has finalized the trip sequence.
+2025-02-14 13:27:39,838 - INFO - Welcome/Instructions message showned.
+2025-02-14 13:27:42,304 - INFO - New ride on going.
+2025-02-14 13:27:43,150 - INFO - Low demand detected
+2025-02-14 13:27:43,155 - INFO - Ride succesfully registered.
+2025-02-14 13:27:44,240 - INFO - User has finalized the trip sequence.
