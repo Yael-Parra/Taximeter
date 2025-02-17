@@ -1,0 +1,20 @@
+2025-02-17 22:01:57,331 - INFO - Welcome/Instructions message showned.
+2025-02-17 22:01:57,336 - INFO - No user data found. Starting with an empty user list.
+2025-02-17 22:02:18,560 - INFO - Successfully saved 1 users to the user data file.
+2025-02-17 22:02:18,561 - INFO - User  'Hugo' with email 'hugo@example.com' has been registered with ID 1.
+2025-02-17 22:02:27,520 - INFO - Loaded 1 users from the user data file.
+2025-02-17 22:02:27,521 - INFO - User  'Hugo' successfully logged in.
+2025-02-17 22:02:30,506 - INFO - New ride on going.
+2025-02-17 22:02:34,350 - INFO - Low demand detected
+2025-02-17 22:02:34,354 - INFO - Ride succesfully registered.
+2025-02-17 22:02:35,948 - INFO - User has finalized the trip sequence.
+2025-02-17 22:13:59,910 - INFO - Loaded 1 users from the user data file.
+2025-02-17 22:14:21,105 - INFO - Successfully saved 2 users to the user data file.
+2025-02-17 22:14:21,105 - INFO - User  'Yael' with email 'yael@example.com' has been registered with ID 2.
+2025-02-17 22:14:21,106 - INFO - Welcome/Instructions message showned.
+2025-02-17 22:14:47,105 - INFO - Loaded 2 users from the user data file.
+2025-02-17 22:14:47,106 - INFO - User  'Yael' successfully logged in.
+2025-02-17 22:14:48,781 - INFO - New ride on going.
+2025-02-17 22:14:51,661 - INFO - Low demand detected
+2025-02-17 22:14:51,665 - INFO - Ride succesfully registered.
+2025-02-17 22:14:52,622 - INFO - User has finalized the trip sequence.
